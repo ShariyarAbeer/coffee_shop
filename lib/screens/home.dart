@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
                     fontSize: 40.0),
               ),
               Text(
-                "A lot  can happen over coffee",
+                "A lot can happen over coffee",
                 style: TextStyle(
                     fontFamily: "BigShouldersText",
                     color: Colors.grey[400],

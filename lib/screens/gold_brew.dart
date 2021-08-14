@@ -2,6 +2,8 @@ import '../constants/color_palette.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';
 
+import 'coffeeDetails.dart';
+
 class GoldBrew extends StatefulWidget {
   const GoldBrew({Key key}) : super(key: key);
 
@@ -23,7 +25,11 @@ class _GoldBrewState extends State<GoldBrew> {
 
   buildListItem(String imgPath, String price, Color bgColor) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) =>
+                CoffeeDetails(imgPath: imgPath, headerColor: bgColor)));
+      },
       child: Stack(
         children: [
           Container(
