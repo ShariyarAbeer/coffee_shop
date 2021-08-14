@@ -192,17 +192,45 @@ class _CoffeeDetailsState extends State<CoffeeDetails> {
                 ),
                 SizedBox(height: 20.0),
                 Container(
-                    height: 150.0,
-                    width: screenWidth,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        buildOneItem('\$65'),
-                        SizedBox(width: 20.0),
-                        buildOneItem('\$120.0'),
-                        SizedBox(width: 20.0)
-                      ],
-                    ))
+                  height: 150.0,
+                  width: screenWidth,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      buildOneItem('\$65'),
+                      SizedBox(width: 20.0),
+                      buildOneItem('\$120.0'),
+                      SizedBox(width: 20.0)
+                    ],
+                  ),
+                ),
+                Row(children: [
+                  Container(
+                      height: 50.0,
+                      width: 225.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: ColorPalette().buttonColor),
+                      child: Center(
+                          child: Text(
+                        'BUY NOW',
+                        style: TextStyle(
+                            fontFamily: "BigShouldersText",
+                            color: Colors.white,
+                            fontSize: 20.0),
+                      ))),
+                  SizedBox(width: 25.0),
+                  Container(
+                      height: 50.0,
+                      width: 50.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          border: Border.all(
+                              color: ColorPalette().buttonColor, width: 2.0)),
+                      child: Center(
+                          child: Icon(Icons.bookmark,
+                              color: Colors.grey, size: 17.0)))
+                ])
               ],
             ),
           ),
